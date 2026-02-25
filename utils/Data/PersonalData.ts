@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Fawad Imran",
-  profile: "/pic3.jpg",
+  profile: "/personal-picture.jpg",
   designation: "Full-Stack Web",
   designationAlternateWords: [
     "Developer.",

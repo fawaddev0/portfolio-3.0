@@ -41,7 +41,7 @@ const ProjectDetails = async ({ params }: Props) => {
         {/* Back Button */}
         <Link
           href="/#projects"
-          className="inline-flex items-center gap-2 text-white hover:text-red-500 transition-colors mb-8 group font-medium"
+          className="inline-flex items-center gap-2 text-white hover:text-purple-500 transition-colors mb-8 group font-medium"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span>Back to Projects</span>
@@ -76,19 +76,19 @@ const ProjectDetails = async ({ params }: Props) => {
               <div className="flex flex-wrap gap-3">
                 <Badge
                   variant="secondary"
-                  className="bg-red-500/10 text-red-500 hover:bg-black border-red-500/20 px-3 py-1 font-bold tracking-wider"
+                  className="bg-purple-500/10 text-purple-500 hover:bg-black border-purple-500/20 px-3 py-1 font-bold tracking-wider"
                 >
                   {project.date || "2024"}
                 </Badge>
                 <Badge
                   variant="secondary"
-                  className="bg-red-950/20 text-red-400 hover:bg-black border-red-900/30 px-3 py-1 font-bold tracking-wider"
+                  className="bg-purple-950/20 text-purple-400 hover:bg-black border-purple-900/30 px-3 py-1 font-bold tracking-wider"
                 >
                   {project.role}
                 </Badge>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black bg-clip-text text-transparent bg-gradient-to-r from-white via-red-100 to-slate-400">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-100 to-slate-400">
                 {project.name}
               </h1>
 
@@ -99,7 +99,7 @@ const ProjectDetails = async ({ params }: Props) => {
               <div className="flex flex-wrap gap-4 mt-4">
                 {project.demo && (
                   <Link href={project.demo} target="_blank">
-                    <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-red-600/20 transition-all hover:scale-105 active:scale-95 flex gap-2 font-bold uppercase tracking-widest">
+                    <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-purple-600/20 transition-all hover:scale-105 active:scale-95 flex gap-2 font-bold uppercase tracking-widest">
                       <Globe className="w-5 h-5" />
                       Live Preview
                     </Button>
@@ -109,7 +109,7 @@ const ProjectDetails = async ({ params }: Props) => {
                   <Link href={project.code} target="_blank">
                     <Button
                       variant="outline"
-                      className="border-white/10 bg-white/5 hover:bg-red-950/20 hover:text-red-500 hover:border-red-500/30 text-white px-8 py-6 text-lg rounded-xl transition-all hover:scale-105 active:scale-95 flex gap-2 font-bold uppercase tracking-widest"
+                      className="border-white/10 bg-white/5 hover:bg-purple-950/20 hover:text-purple-500 hover:border-purple-500/30 text-white px-8 py-6 text-lg rounded-xl transition-all hover:scale-105 active:scale-95 flex gap-2 font-bold uppercase tracking-widest"
                     >
                       <Code className="w-5 h-5" />
                       View Source
@@ -128,8 +128,8 @@ const ProjectDetails = async ({ params }: Props) => {
             {/* Highlights */}
             <section className="flex flex-col gap-8">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center border border-red-500/20">
-                  <ShieldCheck className="w-6 h-6 text-red-500 shadow-[0_0_15px_rgba(239,68,68,0.5)]" />
+                <div className="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center border border-purple-500/20">
+                  <ShieldCheck className="w-6 h-6 text-purple-500 shadow-[0_0_15px_rgba(168,85,247,0.5)]" />
                 </div>
                 <h2 className="text-3xl font-black text-white">
                   Project Highlights
@@ -139,9 +139,9 @@ const ProjectDetails = async ({ params }: Props) => {
                 {project.highlights?.map((highlight, index) => (
                   <li
                     key={index}
-                    className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-red-500/[0.03] hover:border-red-500/20 transition-all duration-300 flex gap-4"
+                    className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-purple-500/[0.03] hover:border-purple-500/20 transition-all duration-300 flex gap-4"
                   >
-                    <div className="mt-1.5 w-2 h-2 rounded-full bg-red-600 shadow-[0_0_10px_rgba(220,38,38,0.8)] shrink-0 group-hover:scale-125 transition-transform" />
+                    <div className="mt-1.5 w-2 h-2 rounded-full bg-purple-600 shadow-[0_0_10px_rgba(147,51,234,0.8)] shrink-0 group-hover:scale-125 transition-transform" />
                     <p className="text-slate-300 text-lg leading-relaxed font-medium">
                       {highlight}
                     </p>
@@ -154,8 +154,8 @@ const ProjectDetails = async ({ params }: Props) => {
             {project.images && project.images.length > 1 && (
               <section className="flex flex-col gap-8">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-red-900/10 flex items-center justify-center border border-red-900/20">
-                    <Calendar className="w-6 h-6 text-red-600" />
+                  <div className="w-10 h-10 rounded-xl bg-purple-900/10 flex items-center justify-center border border-purple-900/20">
+                    <Calendar className="w-6 h-6 text-purple-600" />
                   </div>
                   <h2 className="text-3xl font-black text-white">
                     Visual Showcase
@@ -177,8 +177,8 @@ const ProjectDetails = async ({ params }: Props) => {
                       </CarouselItem>
                     ))}
                   </CarouselContent>
-                  <CarouselPrevious className="left-4 bg-red-600/20 border-red-600/30 hover:bg-red-600 text-white transition-all backdrop-blur-md" />
-                  <CarouselNext className="right-4 bg-red-600/20 border-red-600/30 hover:bg-red-600 text-white transition-all backdrop-blur-md" />
+                  <CarouselPrevious className="left-4 bg-purple-600/20 border-purple-600/30 hover:bg-purple-600 text-white transition-all backdrop-blur-md" />
+                  <CarouselNext className="right-4 bg-purple-600/20 border-purple-600/30 hover:bg-purple-600 text-white transition-all backdrop-blur-md" />
                 </Carousel>
               </section>
             )}
@@ -191,8 +191,8 @@ const ProjectDetails = async ({ params }: Props) => {
               <CardContent className="p-8 flex flex-col gap-8">
                 <div className="flex flex-col gap-6">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-red-500/10 flex items-center justify-center">
-                      <Cpu className="w-4 h-4 text-red-500" />
+                    <div className="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center">
+                      <Cpu className="w-4 h-4 text-purple-500" />
                     </div>
                     <h3 className="text-xl font-bold text-white tracking-tight">
                       Technologies
@@ -203,7 +203,7 @@ const ProjectDetails = async ({ params }: Props) => {
                       <Badge
                         key={index}
                         variant="outline"
-                        className="px-4 py-1.5 bg-white/5 border-white/10 text-slate-300 rounded-full hover:border-red-500/50 hover:bg-red-500/10 hover:text-white transition-all cursor-default font-semibold text-[11px] uppercase tracking-wider"
+                        className="px-4 py-1.5 bg-white/5 border-white/10 text-slate-300 rounded-full hover:border-purple-500/50 hover:bg-purple-500/10 hover:text-white transition-all cursor-default font-semibold text-[11px] uppercase tracking-wider"
                       >
                         {tool}
                       </Badge>
@@ -211,12 +211,12 @@ const ProjectDetails = async ({ params }: Props) => {
                   </div>
                 </div>
 
-                <div className="h-px bg-gradient-to-r from-transparent via-red-500/20 to-transparent" />
+                <div className="h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent" />
 
                 <div className="flex flex-col gap-6">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-red-900/10 flex items-center justify-center">
-                      <User className="w-4 h-4 text-red-600" />
+                    <div className="w-8 h-8 rounded-lg bg-purple-900/10 flex items-center justify-center">
+                      <User className="w-4 h-4 text-purple-600" />
                     </div>
                     <h3 className="text-xl font-bold text-white tracking-tight">
                       Project Details
@@ -242,8 +242,8 @@ const ProjectDetails = async ({ params }: Props) => {
 
                 <div className="mt-4">
                   <Link href="/#contact" className="w-full">
-                    <Button className="w-full bg-red-600/10 border border-red-600/20 hover:bg-red-600 hover:text-white py-6 rounded-xl text-red-500 font-bold uppercase tracking-widest text-xs transition-all duration-300 group flex gap-2 overflow-hidden relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <Button className="w-full bg-purple-600/10 border border-purple-600/20 hover:bg-purple-600 hover:text-white py-6 rounded-xl text-purple-500 font-bold uppercase tracking-widest text-xs transition-all duration-300 group flex gap-2 overflow-hidden relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       <span className="relative z-10 flex items-center justify-center gap-2 w-full">
                         Discuss This Project
                       </span>
@@ -268,7 +268,7 @@ const ProjectDetails = async ({ params }: Props) => {
             </div>
             <Link
               href="/#projects"
-              className="text-red-500 font-black uppercase tracking-[0.2em] text-sm hover:text-red-400 transition-colors flex items-center gap-2 group"
+              className="text-purple-500 font-black uppercase tracking-[0.2em] text-sm hover:text-purple-400 transition-colors flex items-center gap-2 group"
             >
               View Full Archive{" "}
               <span className="group-hover:translate-x-1 transition-transform">
