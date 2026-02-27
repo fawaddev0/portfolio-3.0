@@ -147,21 +147,21 @@ const HeroSection = () => {
               <Link
                 href={personalData.github}
                 target="_blank"
-                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-purple-500 hover:border-purple-500/50 transition-all duration-300 shadow-xl"
+                className="social-icon p-3 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-white hover:bg-white/10 hover:text-purple-400 hover:border-purple-500/50 transition-all duration-300 shadow-xl"
               >
                 <BsGithub size={24} />
               </Link>
               <Link
                 href={personalData.linkedIn}
                 target="_blank"
-                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-purple-500 hover:border-purple-500/50 transition-all duration-300 shadow-xl"
+                className="social-icon p-3 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-white hover:bg-white/10 hover:text-purple-400 hover:border-purple-500/50 transition-all duration-300 shadow-xl"
               >
                 <BsLinkedin size={24} />
               </Link>
               <Link
                 href={personalData.twitter}
                 target="_blank"
-                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-purple-500 hover:border-purple-500/50 transition-all duration-300 shadow-xl"
+                className="social-icon p-3 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-white hover:bg-white/10 hover:text-purple-400 hover:border-purple-500/50 transition-all duration-300 shadow-xl"
               >
                 <FaTwitter size={24} />
               </Link>
@@ -181,7 +181,7 @@ const HeroSection = () => {
               <Link
                 href={personalData.resume}
                 target="_blank"
-                className="group px-8 py-4 rounded-2xl border border-white/10 bg-white/5 text-white font-bold uppercase tracking-wider transition-all hover:bg-white/10 hover:border-purple-500/50 flex items-center gap-2"
+                className="group px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-wider transition-all hover:bg-white/10 hover:border-purple-500/50 shadow-xl flex items-center gap-2"
               >
                 Get Resume{" "}
                 <MdDownload className="group-hover:translate-y-1 transition-transform" />
