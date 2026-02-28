@@ -10,15 +10,12 @@ import {
   SiMongodb,
   SiMysql,
   SiFirebase,
+  SiSupabase,
   SiGit,
-  SiFigma,
-  SiBootstrap,
-  SiMui,
-  SiCanva,
-  SiAdobeillustrator,
-  SiAdobephotoshop,
+  SiN8N,
   SiFreelancer,
 } from "react-icons/si";
+
 import { IconType } from "react-icons";
 
 export const getSkillIcon = (skill: string): IconType => {
@@ -56,21 +53,14 @@ export const getSkillIcon = (skill: string): IconType => {
       return SiMysql;
     case "firebase":
       return SiFirebase;
+    case "supabase":
+      return SiSupabase;
     case "git":
       return SiGit;
-    case "figma":
-      return SiFigma;
-    case "bootstrap":
-      return SiBootstrap;
-    case "materialui":
-    case "mui":
-      return SiMui;
-    case "canva":
-      return SiCanva;
-    case "illustrator":
-      return SiAdobeillustrator;
-    case "photoshop":
-      return SiAdobephotoshop;
+    case "react native":
+      return SiReact;
+    case "n8n":
+      return SiN8N;
     default:
       return SiFreelancer; // Fallback icon
   }
@@ -104,15 +94,14 @@ export const getSkillColor = (skill: string): string => {
       return "#6b21a8"; // Purple-800
     case "firebase":
       return "#a855f7"; // Purple-500
+    case "supabase":
+      return "#6b21a8"; // Purple-800
     case "git":
       return "#9333ea"; // Purple-600
-    case "figma":
+    case "react native":
+      return "#9333ea"; // Purple-600
+    case "n8n":
       return "#7e22ce"; // Purple-700
-    case "bootstrap":
-      return "#6b21a8"; // Purple-800
-    case "materialui":
-    case "mui":
-      return "#a855f7"; // Purple-500
     default:
       return "#a855f7"; // Default Purple
   }

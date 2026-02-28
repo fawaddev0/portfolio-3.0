@@ -9,7 +9,7 @@ const SkillItem = ({ skill }: { skill: string }) => {
   const color = getSkillColor(skill);
 
   return (
-    <div className="mx-4 my-4 group">
+    <div className="mx-2 my-4 group">
       <div className="relative px-8 py-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-3xl transition-all duration-500 hover:border-purple-500/30 hover:bg-white/[0.05] flex items-center gap-4 shadow-xl">
         <div
           className="text-3xl transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_var(--icon-color)]"

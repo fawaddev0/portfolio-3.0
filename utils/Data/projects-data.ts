@@ -73,33 +73,6 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: "Desktop Transcription App (Whisper Flow Clone)",
-    description:
-      "An Electron-based desktop SaaS application that transcribes speech to text and pastes it directly on the user's screen using keyboard shortcuts. Inspired by Whisper Flow AI, the app captures microphone input, transcribes it using the Gemini Transcription API, and pastes the result anywhere on screen via clipboard — allowing users to dictate text in any application without switching windows.",
-    tools: [
-      "Electron.js",
-      "Gemini Transcription API",
-      "Clipboard API",
-    ],
-    role: "Full-stack Developer",
-    code: "",
-    demo: "",
-    date: "2025",
-    images: [],
-    videos: [""],
-    highlights: [
-      "Built a cross-platform desktop SaaS app using Electron.js with microphone permission handling.",
-      "Integrated Gemini Transcription API for accurate real-time speech-to-text conversion.",
-      "Implemented global keyboard shortcuts to trigger transcription without interrupting the user's workflow.",
-      "Used clipboard API to paste transcribed text directly into any active application on screen.",
-    ],
-    challenges: [
-      "Handling microphone permissions and audio capture reliably across different operating systems.",
-      "Ensuring transcribed text is pasted into the correct active window without focus issues.",
-    ],
-  },
-  {
-    id: 4,
     name: "AI-Powered Finance Manager",
     description:
       "A multi-agent n8n automation workflow integrated with Telegram that allows two business partners to manage finances across two companies using natural text or voice messages. The system uses four specialized AI agents — Intent Classifier, Add Records, Edit/Delete Records, and QnA Agent — to handle expense logging, record management, financial queries, and income statement generation. Voice messages are transcribed using Gemini before being processed by the workflow.",
@@ -114,7 +87,14 @@ export const projectsData = [
     code: "",
     demo: "",
     date: "2025",
-    images: [],
+    images: [
+      "/projects/finance/1.jpg",
+      "/projects/finance/2.jpg",
+      "/projects/finance/3.jpg",
+      "/projects/finance/4.jpg",
+      "/projects/finance/5.jpg",
+      "/projects/finance/6.jpeg",
+    ],
     videos: [""],
     highlights: [
       "Designed a multi-agent architecture with 4 specialized AI agents each handling a distinct financial operation.",
@@ -127,6 +107,36 @@ export const projectsData = [
       "Designing the intent classification layer to reliably distinguish between similar user intents.",
       "Handling voice note downloads, transcription, and routing within the same workflow seamlessly.",
       "Managing finance data across two separate companies within a single workflow.",
+    ],
+  },
+  {
+    id: 4,
+    name: "Breeze AI (Whisper Flow Clone)",
+    description:
+      "An Electron-based desktop SaaS application that transcribes speech to text and pastes it directly on the user's screen using keyboard shortcuts. Inspired by Whisper Flow AI, the app captures microphone input, transcribes it using the Gemini Transcription API, and pastes the result anywhere on screen via clipboard — allowing users to dictate text in any application without switching windows.",
+    tools: [
+      "Electron.js",
+      "Gemini Transcription API",
+      "Clipboard API",
+    ],
+    role: "Full-stack Developer",
+    code: "https://github.com/vidividivici/breezeapp/tree/coop",
+    demo: "",
+    date: "2025",
+    images: [
+      "/projects/breeze-ai/1.png",
+      "/projects/breeze-ai/2.png",
+    ],
+    videos: [""],
+    highlights: [
+      "Built a cross-platform desktop SaaS app using Electron.js with microphone permission handling.",
+      "Integrated Gemini Transcription API for accurate real-time speech-to-text conversion.",
+      "Implemented global keyboard shortcuts to trigger transcription without interrupting the user's workflow.",
+      "Used clipboard API to paste transcribed text directly into any active application on screen.",
+    ],
+    challenges: [
+      "Handling microphone permissions and audio capture reliably across different operating systems.",
+      "Ensuring transcribed text is pasted into the correct active window without focus issues.",
     ],
   },
   {
@@ -162,6 +172,112 @@ export const projectsData = [
       "Iteratively tuning training parameters including epochs, image size, and learning rate to hit the 98% mAP target.",
       "Avoiding overfitting on a relatively small dataset of 2,000 images.",
       "Processing and generating accurate JSON output for 12,000 images at scale.",
+    ],
+  },
+  {
+    id: 6,
+    name: "Medical Report Automation",
+    description:
+      "A complete n8n automation workflow built for a medical client to automate their entire patient report generation process. The client had 7 specialized AI agents — Blood, Omics, Microbiome, Lifestyle, Toxxpert, Brain, and Systems Analyzer — each responsible for generating a specific medical report. Previously done manually, the workflow now allows the client to upload patient data files per agent via an n8n form, automatically redacts sensitive patient data, feeds files to each agent, and passes all generated reports to the Systems Analyzer to produce a final master report. The client receives a ZIP file containing all individual reports plus the final systems report.",
+    tools: [
+      "n8n",
+      "Google Gemini",
+      "n8n Forms",
+    ],
+    role: "Automation Developer",
+    code: "",
+    demo: "",
+    date: "2025",
+    images: [
+      "/projects/blood/1.png",
+      "/projects/blood/2.png",
+    ],
+    videos: [""],
+    highlights: [
+      "Automated the entire patient report generation pipeline replacing a fully manual process.",
+      "Built an n8n form-based file upload system allowing the client to submit patient data per agent.",
+      "Implemented automatic patient data redaction before feeding files to AI agents.",
+      "Coordinated 7 specialized AI agents each handling a distinct medical report type.",
+      "Delivered a ZIP file to the client containing all individual agent reports plus a final master report generated by the Systems Analyzer agent.",
+    ],
+    challenges: [
+      "Orchestrating 7 agents in the correct sequence while passing relevant data between them.",
+      "Automating sensitive patient data redaction reliably before any AI processing.",
+      "Aggregating all agent outputs into a single coherent final report via the Systems Analyzer.",
+    ],
+  },
+  {
+    id: 7,
+    name: "Pipeline - Research Directory Platform",
+    description:
+      "A full-stack React web application for researchers to manage their academic directory including papers, collaborators, reviewers, and journals. Researchers can invite other researchers via email to view their publications, add collaborators to papers, send notification emails, and export publication stats by ranking in TXT or DOCX format. The platform also includes a full admin panel supporting email-based and domain-based coupon management along with complete user management.",
+    tools: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+    ],
+    role: "Full-stack Developer",
+    code: "https://github.com/gonzalosoto811/Pipeline#",
+    demo: "https://pipeline-three-tau.vercel.app/",
+    date: "2025",
+    images: [
+      "/projects/pipeline/1.png",
+      "/projects/pipeline/2.png",
+      "/projects/pipeline/3.png",
+      "/projects/pipeline/4.png",
+      "/projects/pipeline/5.png",
+      "/projects/pipeline/6.png",
+    ],
+    videos: [""],
+    highlights: [
+      "Built a full research directory allowing researchers to manage papers, collaborators, reviewers, and journals.",
+      "Implemented email-based invitation system for researchers to share their publications with others.",
+      "Developed collaborator management with automated notification emails on paper updates.",
+      "Built publication stats export feature supporting both TXT and DOCX formats per ranking.",
+      "Developed an admin panel with email-based and domain-based coupon management and user management.",
+    ],
+    challenges: [
+      "Designing a flexible permissions system to handle different researcher roles and access levels.",
+      "Implementing reliable email notifications for collaborator invitations and paper updates.",
+      "Building a DOCX export system that correctly formats publication stats per ranking.",
+    ],
+  },
+  {
+    id: 8,
+    name: "Competitor Research Automation",
+    description:
+      "An n8n automation workflow that generates comprehensive competitor research reports for clinics. The workflow accepts a CSV or Google Sheets file containing clinic details, finds each clinic via Google Places API, verifies the match using Gemini, scrapes their website for contact info, social links, scheduling links, and contact persons, runs a PageSpeed analysis, identifies and scrapes competitors, and feeds all data including reviews, ratings, and performance scores to Gemini for a comparative analysis. Finally a branded PDF report is generated with a 200-word summary of the clinic's strengths and weaknesses against its competitors.",
+    tools: [
+      "n8n",
+      "Google Places API",
+      "Google Gemini",
+      "PageSpeed API",
+      "Web Scraping",
+      "PDF Generation",
+      "Google Sheets",
+    ],
+    role: "Automation Developer",
+    code: "",
+    demo: "",
+    date: "2025",
+    images: [
+      "/projects/osteniq/1.png",
+      "/projects/osteniq/2.png",
+      "/projects/osteniq/3.png"
+    ],
+    videos: [""],
+    highlights: [
+      "Built an end-to-end competitor research pipeline triggered by a CSV or Google Sheets file input.",
+      "Used Google Places API to find clinics and Gemini to verify the correct match by name and address.",
+      "Scraped clinic websites to extract phone numbers, emails, social links, scheduling links, and contact persons.",
+      "Integrated PageSpeed API to score clinic and competitor websites for performance comparison.",
+      "Fed all collected data to Gemini to generate a comparative analysis report with actionable insights.",
+      "Generated a branded PDF with a 200-word clinic summary as the final deliverable.",
+    ],
+    challenges: [
+      "Reliably matching clinics from CSV data to the correct Google Places result using Gemini verification.",
+      "Scraping diverse clinic websites with inconsistent structures to extract consistent contact data.",
+      "Orchestrating multiple APIs — Places, PageSpeed, Gemini, and web scraping — in a single seamless workflow.",
     ],
   },
 ];
