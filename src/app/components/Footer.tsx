@@ -3,7 +3,7 @@
 import { personalData } from "@/../utils/Data/PersonalData";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => (
@@ -97,13 +97,7 @@ const Footer = () => (
             >
               <FaTwitter size={20} />
             </Link>
-            <Link
-              href={personalData.Instagram}
-              target="_blank"
-              className="p-2 rounded-lg bg-white/5 hover:bg-purple-500/10 hover:text-purple-500 transition-all border border-white/5"
-            >
-              <FaInstagram size={20} />
-            </Link>
+
           </div>
         </div>
       </div>
