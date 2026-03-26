@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     "Software Engineer",
     "React Developer",
   ],
+  metadataBase: "https://fawad.work",
   authors: [{ name: "Fawad Imran" }],
   openGraph: {
     title: "Fawad Imran | Personal Portfolio",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Fawad Imran Portfolio",
     images: [
       {
-        url: "/Website-overview.png",
+        url: "https://fawad.work/Website-overview.png",
         width: 1200,
         height: 630,
         alt: "Fawad Imran Portfolio Overview",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Fawad Imran | Full Stack Developer",
     description: "Building modern web applications and AI automations.",
-    images: ["/Website-overview.png"],
+    images: ["https://fawad.work/Website-overview.png"],
   },
   robots: {
     index: true,
