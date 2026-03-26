@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Software Engineer",
     "React Developer",
   ],
-  metadataBase: "https://fawad.work",
+  metadataBase: new URL("https://fawad.work"),
   authors: [{ name: "Fawad Imran" }],
   openGraph: {
     title: "Fawad Imran | Personal Portfolio",
